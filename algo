@@ -1,0 +1,28 @@
+algo checkpoint
+n
+var 
+ch:string ;
+v,w,i:integer;
+
+begin 
+
+
+repeat 
+READ(ch)
+until ch[length(ch)]="." 
+ v=0;
+ w=0;
+
+
+for i FROM 1 to length(ch)STEP step do  
+begin
+if (majus(ch[i])=A OR  majus(ch[i])=E OR  majus(ch[i])=U OR  majus(ch[i])=I OR majus(ch[i])=Y OR  majus(ch[i])=O    ) THEN 
+begin 
+v:= v+1 
+END_if
+ if (ch[i] =" " )THEN 
+w:= w+1 ;
+END_if 
+END_for   
+WRITE("longeur de chaine=",i,"number of words=",w,"number of voyal=",v)
+END_checkpoint 
