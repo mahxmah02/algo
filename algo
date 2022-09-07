@@ -14,7 +14,7 @@ until ch[length(ch)]="."
  w=0;
 
 
-for i FROM 1 to length(ch)STEP step do  
+for i FROM 1 to length(ch) do  
 begin
 if (majus(ch[i])=A OR  majus(ch[i])=E OR  majus(ch[i])=U OR  majus(ch[i])=I OR majus(ch[i])=Y OR  majus(ch[i])=O    ) THEN 
 begin 
